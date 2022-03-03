@@ -8,12 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class LoginController {
 
     @GetMapping("/")
-    public ModelAndView defaultHome() {
-        return new ModelAndView("home");
-    }
-
-    @GetMapping("/login")
-    public ModelAndView login() {
-        return new ModelAndView("login");
+    public String defaultHome() {
+        return "Hello - Haniyeh";
     }
 }
